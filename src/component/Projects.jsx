@@ -181,7 +181,7 @@ export const Projects = () => {
               <h1 className={hname}>{card.name}</h1>
               <div className={plname}>
                 <Button variant="outlined" onMouseOver={he1} onMouseOut={he2}>
-                  <Link to={card.link}>View</Link>
+                  <Link to={card.link} style={{textDecoration:'none' , color:'rgba(9,157,255,1)'}}>View</Link>
                 </Button>
               </div>
             </>
