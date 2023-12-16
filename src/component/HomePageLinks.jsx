@@ -54,7 +54,7 @@ export const HomePageLinks = () => {
                     textDecoration: "none",
                     color: hover1 ? color2 : color,
                   }}
-                  to="/experience"
+                  to="/portfolio/experience"
                 >
                   Experience
                 </Link>
@@ -95,7 +95,7 @@ export const HomePageLinks = () => {
                     textDecoration: "none",
                     color: hover2 ? color2 : color,
                   }}
-                  to='/projects'
+                  to='/portfolio/projects'
                 >
                   Projects
                 </Link>
@@ -136,7 +136,7 @@ export const HomePageLinks = () => {
                     textDecoration: "none",
                     color: hover3 ? color2 : color,
                   }}
-                  to='/skills'
+                  to='/portfolio/skills'
                 >
                   Skills
                 </Link>
