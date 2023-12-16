@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../css/navBar.css";
-import pdf from "../pdf/CV_2023033117220381.pdf";
-import gsap, { Power3 } from "gsap";
+import pdf from "../pdf/TUSHAR_KUMAR.pdf";
+
 
 export const NavBar = () => {
   //   background: rgb(9,157,255);
@@ -15,8 +15,7 @@ export const NavBar = () => {
   const navItem1 = useRef(null);
   const navItem2 = useRef(null);
   const navItem3 = useRef(null);
-  let ease = Power3.easeOut();
-  const tl = useRef();
+
   const location = useLocation();
 
   useEffect(() => {
@@ -44,7 +43,7 @@ export const NavBar = () => {
       <div className="nav-content">
         <ul>
           <li ref={navItem1} style={{ background: bg }}>
-            <Link className="nav-content-link" to="/">
+            <Link className="nav-content-link" to="/portfolio">
               Home
             </Link>
           </li>
@@ -54,7 +53,7 @@ export const NavBar = () => {
             </a>
           </li>
           <li ref={navItem3} style={{ background: bg }}>
-            <Link className="nav-content-link" to="/contact">
+            <Link className="nav-content-link" to="/portfolio/contact">
               Contact
             </Link>
           </li>
