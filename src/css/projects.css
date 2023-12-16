@@ -143,6 +143,7 @@
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-delay: 3.5s;
+    z-index: 5;
 }
 .project_link_wrapper1{
     position: absolute;
@@ -154,6 +155,7 @@
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-delay: 3.5s;
+    z-index: 5;
 }
 .project_link_wrapper2{
     position: absolute;
@@ -165,6 +167,7 @@
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-delay: 3.5s;
+    z-index: 5;
 }
 @media screen and (max-width: 600px) {
     .animationWrapper{

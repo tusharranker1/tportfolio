@@ -19,7 +19,7 @@ export const NavBar = () => {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.pathname === "/portfolio/experience" || location.pathname==='/portfolio/projects') {
+    if (location.pathname === "/tportfolio/experience" || location.pathname==='/tportfolio/projects') {
       setBg(
         "linear-gradient(90deg, rgba(9,157,255,1) 0%, rgba(5,12,23,1) 81%)"
       );
