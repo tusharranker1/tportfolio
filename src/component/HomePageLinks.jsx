@@ -12,13 +12,13 @@ export const HomePageLinks = () => {
     const [color2,setColor2] = useState('red');
     
     useEffect(()=>{
-      if(location.pathname==='/experience' || location.pathname==='/projects'){
+      if(location.pathname==='/tportfolio/experience' || location.pathname==='/tportfolio/projects'){
         setPageChange(true)
         setColor('rgb(225, 225, 225,0.18)')
         setColor2('#099dff')
         
       }
-      if(location.pathname === '/skills'){
+      if(location.pathname === '/tportfolio/skills'){
         setColor('rgba(242, 0, 125,0.4)')
         setColor2('rgba(242, 0, 125,1)')
         
@@ -54,7 +54,7 @@ export const HomePageLinks = () => {
                     textDecoration: "none",
                     color: hover1 ? color2 : color,
                   }}
-                  to="/portfolio/experience"
+                  to="/tportfolio/experience"
                 >
                   Experience
                 </Link>
@@ -95,7 +95,7 @@ export const HomePageLinks = () => {
                     textDecoration: "none",
                     color: hover2 ? color2 : color,
                   }}
-                  to='/portfolio/projects'
+                  to='/tportfolio/projects'
                 >
                   Projects
                 </Link>
@@ -136,7 +136,7 @@ export const HomePageLinks = () => {
                     textDecoration: "none",
                     color: hover3 ? color2 : color,
                   }}
-                  to='/portfolio/skills'
+                  to='/tportfolio/skills'
                 >
                   Skills
                 </Link>

@@ -19,6 +19,7 @@ import pro3Img2 from "../Images/cee2.png";
 import pro3Img3 from "../Images/cee3.png";
 import pro3Img4 from "../Images/cee3.png";
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export const Projects = () => {
   const expimg = useRef();
@@ -95,16 +96,19 @@ export const Projects = () => {
       name: "Hostinger-ReDesign",
       imgs: [pro1Img1, pro1Img2, pro1Img3, pro1Img4],
       content: "Lorem Ipsum",
+      link:'https://tusharranker1.github.io/Hostinger-ReDesign/'
     },
     {
       name: "FuelCab-India",
       imgs: [pro2Img2, pro2Img2, pro2Img3, pro2Img4],
       content: "Lorem Ipsum",
+      link:'https://www.fuelcab.com/'
     },
     {
       name: "Exam Pannel",
       imgs: [pro3Img1, pro3Img2, pro3Img3, pro3Img4],
       content: "Lorem Ipsum",
+      link:'https://github.com/tusharranker1/Exam-Management-Panel'
     },
   ];
   const handleEvent0 = () => {
@@ -177,7 +181,7 @@ export const Projects = () => {
               <h1 className={hname}>{card.name}</h1>
               <div className={plname}>
                 <Button variant="outlined" onMouseOver={he1} onMouseOut={he2}>
-                  view
+                  <Link to={card.link}>View</Link>
                 </Button>
               </div>
             </>

@@ -19,12 +19,12 @@ export const NavBar = () => {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.pathname === "/experience" || location.pathname==='/projects') {
+    if (location.pathname === "/portfolio/experience" || location.pathname==='/portfolio/projects') {
       setBg(
         "linear-gradient(90deg, rgba(9,157,255,1) 0%, rgba(5,12,23,1) 81%)"
       );
     }
-    if(location.pathname === '/skills'){
+    if(location.pathname === '/tportfolio/skills'){
       setBg('linear-gradient(90deg, rgba(106,0,254,1) 0%, rgba(242,0,125,1) 79%)')
     }
 
@@ -43,7 +43,7 @@ export const NavBar = () => {
       <div className="nav-content">
         <ul>
           <li ref={navItem1} style={{ background: bg }}>
-            <Link className="nav-content-link" to="/portfolio">
+            <Link className="nav-content-link" to="/tportfolio">
               Home
             </Link>
           </li>
@@ -53,7 +53,7 @@ export const NavBar = () => {
             </a>
           </li>
           <li ref={navItem3} style={{ background: bg }}>
-            <Link className="nav-content-link" to="/portfolio/contact">
+            <Link className="nav-content-link" to="/tportfolio/contact">
               Contact
             </Link>
           </li>
