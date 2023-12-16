@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Hind:wght@700&family=Kalnia:wght@300&family=Lobster&family=Mulish:wght@200&family=Oswald&family=Poiret+One&family=Roboto+Mono&family=Titillium+Web:wght@200&display=swap');
+.Projects_Wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(24, 24, 24);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+.pro_heading{
+    position: absolute;
+    font-size: 5em;
+    z-index: 300000;
+    color: white;
+    transform: translateZ(10px);
+    text-shadow: 0px 10px 5px black;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.animationWrapper{
+    transform: translateY(50px);
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    perspective: 100px;
+    transform-style: preserve-3d;
+}
+.animationWrapper img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+.cubeWrapper0{
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.348) 0px 0px 1px 0px inset, rgba(0, 0, 0, 0.744) -3px -5px 6px 5px inset;
+    left: -130px;
+    top: -50px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.245);
+    transform: scale(0.4);
+    overflow: hidden;
+    transition: 0.3s;
+}
+.cubeWrapper0_heading{
+    
+    position: absolute;
+    z-index: 100;
+    left: 230px;
+    top: 120px;
+    font-size: 1.5em;
+    font-family: 'Kalnia', serif;
+    background:linear-gradient(90deg, rgba(9,157,255,1) 0%, rgba(76, 0, 255, 0.354) 81%);
+    background-clip: text;
+    color: transparent;
+    border-bottom: 1px solid rgb(2, 124, 255);
+    opacity: 0;
+    animation-name:animateProjectOp ;
+    animation-duration: 1s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes animateProjectOp {
+    100%{
+        opacity: 1;
+    }
+}
+.cubeWrapper1_heading{
+    right: 240px;
+    top: 120px;
+    font-size: 1.5em;
+    position: absolute;
+    font-family: 'Kalnia', serif;
+    background:linear-gradient(90deg, rgba(9,157,255,1) 0%, rgba(76, 0, 255, 0.354) 81%);
+    background-clip: text;
+    color: transparent;
+    border-bottom: 1px solid rgb(2, 124, 255);
+    opacity: 0;
+    animation-name:animateProjectOp ;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+}
+.cubeWrapper2_heading{
+    right: 240px;
+    bottom:170px;
+    font-size: 1.5em;
+    position: absolute;
+    font-family: 'Kalnia', serif;
+    background:linear-gradient(90deg, rgba(9,157,255,1) 0%, rgba(76, 0, 255, 0.354) 81%);
+    background-clip: text;
+    color: transparent;
+    border-bottom: 1px solid rgb(2, 124, 255);
+    opacity: 0;
+    animation-name:animateProjectOp ;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+}
+.cubeWrapper1{
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.348) 0px 0px 1px 0px inset, rgba(0, 0, 0, 0.744) -3px -5px 6px 5px inset;
+    right: -130px;
+    top: -50px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.245);
+    transform: scale(0.4);
+    transition: 0.3s;
+}
+.cubeWrapper2{
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.348) 0px 0px 1px 0px inset, rgba(0, 0, 0, 0.744) -3px -5px 6px 5px inset;
+    right: -130px;
+    bottom: -120px;
+    position: absolute;
+    transform: scale(0.4);
+    background-color: rgba(0, 0, 0, 0.245);
+    transition: 0.3s;
+}
+
+.project_link_wrapper0{
+    position: absolute;
+    left: 230px;
+    top: 170px;
+    transform: scale(0.8);
+    opacity: 0;
+    animation-name:animateProjectOp ;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+}
+.project_link_wrapper1{
+    position: absolute;
+    right: 340px; 
+    top: 170px;
+    transform: scale(0.8);
+    opacity: 0;
+    animation-name:animateProjectOp ;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+}
+.project_link_wrapper2{
+    position: absolute;
+    right: 340px;
+    bottom:120px;
+    transform: scale(0.8);
+    opacity: 0;
+    animation-name:animateProjectOp ;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+}
+@media screen and (max-width: 600px) {
+    .animationWrapper{
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+    .animationWrapper img{
+        
+        position: absolute;
+        transform: scale(0.5) translateY(150px);
+        top: 0;
+        
+    }
+    .pro_heading{
+        font-size: 1.5em;
+        top: 240px;
+        left: 125px;
+    }
+    .exp_Content{
+        background:none;
+        box-shadow: none;
+    }
+    .cubeWrapper0{
+        height: 300px;
+        width: 300px;
+        top: 0px;
+        box-shadow: none;
+    }
+    .cubeWrapper1{
+        height: 300px;
+        width: 300px;
+        top: 0px;
+        box-shadow: none;
+    }
+    .cubeWrapper2{
+        height: 300px;
+        width: 300px;
+        top: 350px;
+        box-shadow: none;
+    }
+    .cubeWrapper0_heading{
+        font-size: 1em;
+        width: 200%;
+        top: 190px;
+        left: 210px;
+    }
+    .cubeWrapper1_heading{
+        width: 50%;
+        font-size: 1em;
+        left: 10px;
+        top: 190px;
+    }
+    .cubeWrapper2_heading{
+        font-size: 1em;
+        right: 10px;
+        bottom: 100px;
+    }
+    .project_link_wrapper0{
+        right: -700px;
+        top: 220px;
+    }
+    .project_link_wrapper1{
+        top: 220px;
+        left: 10px;
+    }
+    .project_link_wrapper2{
+        right: 0px;
+        bottom: 60px;
+    }
+}
